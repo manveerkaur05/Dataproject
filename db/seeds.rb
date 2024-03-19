@@ -18,4 +18,5 @@ csv.each_with_index do |row, index|
     puts "Error on row #{index + 1}: #{e.message}"
     puts "Data causing the error: #{row}"
   end
+  
 end
