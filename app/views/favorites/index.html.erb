@@ -1,0 +1,6 @@
+<h1>My Favorite Books</h1>
+<ul>
+  <% @user.favorites.each do |favorite| %>
+    <li><%= link_to favorite.book.title, book_path(favorite.book) %></li>
+  <% end %>
+</ul>
