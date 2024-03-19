@@ -13,5 +13,6 @@ class Book < ApplicationRecord
     books = books.where("title LIKE ?", "%#{query.downcase}%") if query.present?
     books = books.where(genre: genre) if genre.present?
     books
+    
   end 
 end
